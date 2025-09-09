@@ -110,4 +110,14 @@ public class Invoice {
 
     public Invoice() {
     }
+
+    public Invoice(UUID id, LocalDate date, String customer, String baseCurrency, BigDecimal baseAmount, BigDecimal taxRate, OffsetDateTime createAt) {
+        this.id = id;
+        this.date = date;
+        Customer = customer;
+        this.baseCurrency = baseCurrency;
+        this.baseAmount = baseAmount;
+        this.taxRate = taxRate;
+        this.createAt = createAt;
+    }
 }

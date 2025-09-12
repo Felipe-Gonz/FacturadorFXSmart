@@ -6,7 +6,6 @@ import com.example.FacturadorFXSmart.repository.InvoiceRepository;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
 
-import java.awt.print.Pageable;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
@@ -64,6 +63,6 @@ public class InvoiceService {
                 tax.setScale(2, RoundingMode.HALF_EVEN),
                 total.setScale(2, RoundingMode.HALF_EVEN),
                 subtotalT, taxT, totalT
-        )
+        );
     }
 }

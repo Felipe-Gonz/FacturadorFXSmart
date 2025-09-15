@@ -11,6 +11,7 @@ import java.math.RoundingMode;
 import java.time.LocalDate;
 import java.util.*;
 
+@Service
 public class InvoiceService {
 
     private final InvoiceRepository repo;

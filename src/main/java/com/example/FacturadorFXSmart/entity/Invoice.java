@@ -20,13 +20,13 @@ public class Invoice {
     @Column(nullable = false, length = 120)
     private String Customer;
 
-    @Column(name = "base_currency", nullable = false, length = 3)
+    @Column(name = "base_currency", nullable = false, length = 3, columnDefinition = "char(3)")
     private String baseCurrency;
 
     @Column(name = "base_amount", nullable = false, precision = 19, scale = 6)
     private BigDecimal baseAmount;
 
-    @Column(name = "taxe_rate", nullable = false, precision = 5, scale = 4)
+    @Column(name = "tax_rate", nullable = false, precision = 5, scale = 4)
     private BigDecimal taxRate;
 
     @Column(name = "create_at", nullable = false)

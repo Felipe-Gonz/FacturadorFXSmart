@@ -12,8 +12,12 @@ import java.time.OffsetDateTime;
 public class FxRate {
     @Id
     @Column(name = "rate_date") private LocalDate rateDate;
-    @Id @Column(length = 3) private String base;
-    @Id @Column(length = 3) private String target;
+
+    @Id @Column(length = 3, columnDefinition = "char(3)")
+    private String base;
+
+    @Id @Column(length = 3, columnDefinition = "char(3)")
+    private String target;
 
     @Column(nullable = false, precision = 19, scale = 8)
     private BigDecimal rate;

@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
 import java.util.UUID;
 
+@RestController
+@RequestMapping("/v1/invoices")
 public class InvoiceController {
     private final InvoiceService svc;
 

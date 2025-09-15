@@ -2,6 +2,7 @@ package com.example.FacturadorFXSmart.service;
 
 import com.example.FacturadorFXSmart.entity.FxRate;
 import com.example.FacturadorFXSmart.repository.FxRateRepository;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -10,6 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class FxService {
     private final FxRateRepository repo;
 
